@@ -1,0 +1,1 @@
+GRAFCET diagrams editor, with C-code generation, and execution control through sockets. Based on GeCé compiler and University of Naples' UniSim editor. Written in VB 2008 OOP over .NET 2.0 and C.

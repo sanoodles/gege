@@ -1,0 +1,364 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9DADA357-E560-4E33-A2D1-368700D689A8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>GeGe.My.MyApplication</StartupObject>
+    <RootNamespace>GeGe</RootNamespace>
+    <AssemblyName>GeGe</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>GeGe.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>GeGe.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Domain\Generic\SerializableColor.vb" />
+    <Compile Include="Domain\Generic\Hexa.vb" />
+    <Compile Include="Domain\Generic\SerializableDictionary.vb" />
+    <Compile Include="Domain\Generic\S11nExtraTypes.vb" />
+    <Compile Include="Domain\Grafcet\Action.vb" />
+    <Compile Include="Domain\Grafcet\Condition\Condition.vb" />
+    <Compile Include="Domain\Grafcet\Condition\ConditionsManager.vb" />
+    <Compile Include="Domain\Grafcet\Condition\TimeDependentCondition.vb" />
+    <Compile Include="Domain\Grafcet\ControllableGeCe\GCFunctions\GCAccionsContinues.vb" />
+    <Compile Include="Domain\Grafcet\ControllableGeCe\GCFunctions\GCAccionsPuntuals.vb" />
+    <Compile Include="Domain\Grafcet\ControllableGeCe\GCFunctions\GCAvaluaReceptivitats.vb" />
+    <Compile Include="Domain\Grafcet\ControllableGeCe\GCFunctions\GCES.vb" />
+    <Compile Include="Domain\Grafcet\ControllableGeCe\GCFunctions\GCEvolucioGrafcet.vb" />
+    <Compile Include="Domain\Grafcet\ControllableGeCe\GCFunctions\GCFunctions.vb" />
+    <Compile Include="Domain\Grafcet\ControllableGeCe\GCFunctions\GCAltresRutines.vb" />
+    <Compile Include="Domain\Grafcet\ControllableGeCe\RCFunctions.vb" />
+    <Compile Include="Domain\Grafcet\ControllableGeCe\GCwithRC.vb" />
+    <Compile Include="Domain\Grafcet\GeCeControl.vb" />
+    <Compile Include="Domain\Grafcet\ControllableGeCe\GCFunctions\GCFunctionsController.vb" />
+    <Compile Include="Domain\Grafcet\ControllableGeCe\GCMapping.vb" />
+    <Compile Include="Domain\Grafcet\ControllableGeCe\RCMapping.vb" />
+    <Compile Include="Domain\Grafcet\RunControl.vb" />
+    <Compile Include="Infrastructure\ProjectData.vb" />
+    <Compile Include="Infrastructure\RunControlIO.vb" />
+    <Compile Include="Infrastructure\DataIO.vb" />
+    <Compile Include="Presentation\Controls\VariableCellControl.vb" />
+    <Compile Include="Presentation\Controls\VariablesGridControl.vb" />
+    <Compile Include="Presentation\ExcBox.vb" />
+    <Compile Include="Presentation\Forms\BaseStep\MacroStepDialogForm.Designer.vb">
+      <DependentUpon>MacroStepDialogForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\Forms\BaseStep\MacroStepDialogForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\Forms\BaseStep\Order\ActionDialogForm.Designer.vb">
+      <DependentUpon>ActionDialogForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\Forms\BaseStep\Order\ActionDialogForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\Forms\BaseStep\Order\ForcingOrderDialogForm.Designer.vb">
+      <DependentUpon>ForcingOrderDialogForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\Forms\BaseStep\Order\ForcingOrderDialogForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\Forms\BaseStep\Step\EnclosedStepDialogForm.Designer.vb">
+      <DependentUpon>EnclosedStepDialogForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\Forms\BaseStep\Step\EnclosedStepDialogForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\Forms\BaseStep\Step\EnclosingStepForm.Designer.vb">
+      <DependentUpon>EnclosingStepForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\Forms\BaseStep\Step\EnclosingStepForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\Forms\BaseStep\Step\StepDialogForm.Designer.vb">
+      <DependentUpon>StepDialogForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\Forms\BaseStep\Step\StepDialogForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\Forms\Variable\VariableSelectorDialogForm.Designer.vb">
+      <DependentUpon>VariableSelectorDialogForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\Forms\Variable\VariableSelectorDialogForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\Forms\Body\BodyForm.Designer.vb">
+      <DependentUpon>BodyForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\Forms\Body\BodyForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\Forms\RunControlForm.Designer.vb">
+      <DependentUpon>RunControlForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\Forms\RunControlForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\Forms\Variable\VariablesForm.Designer.vb">
+      <DependentUpon>VariablesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\Forms\Variable\VariablesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Domain\Grafcet\Project.vb" />
+    <Compile Include="Presentation\Forms\Project\ProjectDialogForm.Designer.vb">
+      <DependentUpon>ProjectDialogForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\Forms\Project\ProjectDialogForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\Forms\Body\GrafcetDialogForm.Designer.vb">
+      <DependentUpon>GrafcetDialogForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\Forms\Body\GrafcetDialogForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\IGraphicalObject.vb" />
+    <Compile Include="Domain\Generic\GlobalVariables.vb" />
+    <Compile Include="Presentation\Forms\CommentsDialogForm.Designer.vb">
+      <DependentUpon>CommentsDialogForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\Forms\CommentsDialogForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\Forms\Body\ResizePanelDialogForm.Designer.vb">
+      <DependentUpon>ResizePanelDialogForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\Forms\Body\ResizePanelDialogForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\Forms\Transition\TransitionDialogForm.Designer.vb">
+      <DependentUpon>TransitionDialogForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\Forms\Transition\TransitionDialogForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\Forms\Variable\VariableDialogForm.Designer.vb">
+      <DependentUpon>VariableDialogForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\Forms\Variable\VariableDialogForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\Forms\Project\ProjectForm.Designer.vb">
+      <DependentUpon>ProjectForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\Forms\Project\ProjectForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Domain\Generic\DataTypes\Variable.vb" />
+    <Compile Include="Domain\Generic\DataTypes\BooleanVariable.vb" />
+    <Compile Include="Domain\Generic\DataTypes\IntegerVariable.vb" />
+    <Compile Include="Domain\Generic\DataTypes\RealVariable.vb" />
+    <Compile Include="Domain\Generic\DataTypes\VariablesList.vb" />
+    <Compile Include="Domain\Generic\DataTypes\VariablesManager.vb" />
+    <Compile Include="Presentation\Symbols\BaseStep\Step\GraphicalEnclosedStep.vb" />
+    <Compile Include="Presentation\Symbols\Body\BodyEventRaiser.vb" />
+    <Compile Include="Presentation\Symbols\Body\Grafcet\Enclosure.vb" />
+    <Compile Include="Presentation\Symbols\BaseStep\Step\GraphicalEnclosingStep.vb" />
+    <Compile Include="Presentation\Symbols\BaseStep\Order\GraphicalAction.vb" />
+    <Compile Include="Presentation\Symbols\BaseStep\Order\OrderBlock.vb" />
+    <Compile Include="Domain\Generic\Expressions\ArithmeticExpression.vb" />
+    <Compile Include="Domain\Generic\Expressions\BooleanExpression.vb" />
+    <Compile Include="Presentation\Symbols\Body\Body.vb" />
+    <Compile Include="Presentation\Symbols\Body\MacroStepBody.vb" />
+    <Compile Include="Presentation\Symbols\BaseStep\Order\GraphicalForcingOrder.vb" />
+    <Compile Include="Presentation\Symbols\BaseStep\Order\GraphicalOrder.vb" />
+    <Compile Include="Presentation\Symbols\BaseStep\BaseGraphicalStep.vb" />
+    <Compile Include="Domain\Grafcet\ConvergenceDivergence.vb" />
+    <Compile Include="Presentation\Symbols\BaseStep\GraphicalMacroStep.vb" />
+    <Compile Include="Presentation\Symbols\BaseStep\Step\GraphicalStep.vb" />
+    <Compile Include="Presentation\Symbols\BaseStep\GraphicalStepsList.vb" />
+    <Compile Include="Presentation\Symbols\Transition\GraphicalTransition.vb" />
+    <Compile Include="Presentation\Symbols\Transition\GraphicalTransitionsList.vb" />
+    <Compile Include="Presentation\Symbols\Body\Grafcet\Grafcet.vb" />
+    <Compile Include="Presentation\Drawer.vb" />
+    <Compile Include="ProjectGroup\ResourceTable.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Presentation\Forms\BaseStep\MacroStepDialogForm.resx">
+      <DependentUpon>MacroStepDialogForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\Forms\BaseStep\Order\ActionDialogForm.resx">
+      <DependentUpon>ActionDialogForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\Forms\BaseStep\Order\ForcingOrderDialogForm.resx">
+      <DependentUpon>ForcingOrderDialogForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\Forms\BaseStep\Step\EnclosedStepDialogForm.resx">
+      <DependentUpon>EnclosedStepDialogForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\Forms\BaseStep\Step\EnclosingStepForm.resx">
+      <DependentUpon>EnclosingStepForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\Forms\BaseStep\Step\StepDialogForm.resx">
+      <DependentUpon>StepDialogForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\Forms\CommentsDialogForm.resx">
+      <DependentUpon>CommentsDialogForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\Forms\Project\ProjectDialogForm.resx">
+      <DependentUpon>ProjectDialogForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\Forms\Body\GrafcetDialogForm.resx">
+      <DependentUpon>GrafcetDialogForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\Forms\Body\ResizePanelDialogForm.resx">
+      <DependentUpon>ResizePanelDialogForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\Forms\Transition\TransitionDialogForm.resx">
+      <DependentUpon>TransitionDialogForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\Forms\Variable\VariableDialogForm.resx">
+      <DependentUpon>VariableDialogForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\Forms\Variable\VariableSelectorDialogForm.resx">
+      <DependentUpon>VariableSelectorDialogForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\Forms\Body\BodyForm.resx">
+      <DependentUpon>BodyForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\Forms\Project\ProjectForm.resx">
+      <DependentUpon>ProjectForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\Forms\RunControlForm.resx">
+      <DependentUpon>RunControlForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\Forms\Variable\VariablesForm.resx">
+      <DependentUpon>VariablesForm.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Cursors\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
